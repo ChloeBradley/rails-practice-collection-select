@@ -69,6 +69,7 @@ feature 'employment' do
     click_on "Create Employment"
 
     expect(current_path).to eq(employments_path)
+    expect(page).to have_content('Firsty Lasty')
 
-  end    
+  end
 end
