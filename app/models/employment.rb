@@ -1,7 +1,7 @@
 class Employment < ActiveRecord::Base
-  has_many :organizations
-  has_many :people
-  has_many :job_titles, through: :people
-  has_many :locations
+  belongs_to :organizations
+  belongs_to :people
+  belongs_to :job_titles
+  belongs_to :locations
 
 end

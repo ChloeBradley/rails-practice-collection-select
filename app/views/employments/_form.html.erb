@@ -22,7 +22,7 @@
 
   <div class="form-group">
     <%= f.label :person_id %>
-    <em><%= f.collection_select(:person_id, Person.all, :id, :name, {}, {class:'form-control'}) %></em>
+    <em><%= f.collection_select(:person_id, Person.all, :id, :full_name, {}, {class:'form-control'}) %></em>
   </div>
 
   <div class="form-group">

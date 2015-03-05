@@ -1,5 +1,3 @@
 class Organization < ActiveRecord::Base
-  has_many :people
-  has_many :job_titles
-
+has_many :employments
 end

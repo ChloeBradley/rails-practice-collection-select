@@ -1,4 +1,4 @@
 class JobTitle < ActiveRecord::Base
-  belongs_to :person
+  has_many :employments
 
 end
