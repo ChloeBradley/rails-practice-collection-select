@@ -38,7 +38,7 @@
 
   <div class="form-group">
     <%= f.label :location_id %>
-    <em>Add the locations dropdown here</em>
+    <em><%= f.collection_select(:location_id, Location.all, :id, :name, {}, {class: 'form-control'}) %></em>
   </div>
 
   <p>
