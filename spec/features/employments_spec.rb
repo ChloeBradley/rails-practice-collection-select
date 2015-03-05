@@ -20,4 +20,14 @@ feature 'employment' do
     visit new_employment_path
     select organization.name, from: :employment_organization_id
   end
+
+  scenario 'User can select job title' do
+    job_title = JobTitle.create!(
+    name: "Manager"
+    )
+
+    visit root_path
+    click_on "New Employment"
+    select job_title.name, from: :employment_job_title_id
+  end
 end
